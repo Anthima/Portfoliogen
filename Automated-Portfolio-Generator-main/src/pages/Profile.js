@@ -46,7 +46,7 @@ function Profile(props) {
   const UpdateFireStore = () => {
     // console.log(docData)
     docRef.set(docData)
-    alert('Your data is updated, your portfolio link is avaliable on homepage :)')
+    alert('Your data is updated, your portfolio link is avaliable on homepage !')
   }
 
   const fetchData = useCallback(async () => {
@@ -100,43 +100,43 @@ function Profile(props) {
 
   const BasicDetailSection = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Basic Details </h2>
 
         <div style={{
           display: 'flex',
           justifyContent: 'space-around'
         }}>
-          <TextField
+          <TextField 
             className={classes.field}
             label="First Name"
-            variant="filled"
+            variant="outlined"
             value={docData.FirstName}
             onChange={(e) => setDocData({ ...docData, FirstName: e.target.value })}
           />
-          <TextField
+          <TextField 
             className={classes.field}
             label="Last Name"
-            variant="filled"
+            variant="outlined"
             value={docData.LastName}
             onChange={(e) => setDocData({ ...docData, LastName: e.target.value })}
           />
         </div>
         <div style={{
           display: 'flex',
-          justifyContent: 'space-around'
+          justifyContent: 'space-around',
         }}>
-        <TextField
+          <TextField
             className={classes.field}
             label="City"
-            variant="filled"
+            variant="outlined"
             value={docData.city}
             onChange={(e) => setDocData({ ...docData, city: e.target.value })}
           />
           <TextField
             className={classes.field}
             label="Country"
-            variant="filled"
+            variant="outlined"
             value={docData.country}
             onChange={(e) => setDocData({ ...docData, country: e.target.value })}
           />
@@ -147,7 +147,7 @@ function Profile(props) {
             className={classes.field}
             label="Email"
             multiline
-            variant="filled"
+            variant="outlined"
             value={docData.email}
             onChange={(e) => setDocData({ ...docData, email: e.target.value })}
           />
@@ -156,7 +156,7 @@ function Profile(props) {
             className={classes.field}
             label="Tagline"
             multiline
-            variant="filled"
+            variant="outlined"
             value={docData.tagline}
             onChange={(e) => setDocData({ ...docData, tagline: e.target.value })}
           />
@@ -165,7 +165,7 @@ function Profile(props) {
             className={classes.field}
             label="Description"
             multiline
-            variant="filled"
+            variant="outlined"
             value={docData.Description}
             onChange={(e) => setDocData({ ...docData, Description: e.target.value })}
           />
@@ -186,7 +186,7 @@ function Profile(props) {
                 className={classes.field}
                 label="Company"
                 value={exp.Company}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].Company = e.target.value
@@ -201,7 +201,7 @@ function Profile(props) {
                 className={classes.field}
                 label="Title"
                 value={exp.Title}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].Title = e.target.value
@@ -218,7 +218,7 @@ function Profile(props) {
                 className={classes.field}
                 label="Start Date"
                 value={exp.StartDate}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].StartDate = e.target.value
@@ -233,7 +233,7 @@ function Profile(props) {
                 className={classes.field}
                 label="End Date"
                 value={exp.EndDate}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].EndDate = e.target.value
@@ -251,7 +251,7 @@ function Profile(props) {
               label="Description"
               placeholder="Placeholder"
               multiline
-              variant="filled"
+              variant="outlined"
               value={exp.Description}
               onChange={(e) => {
                 let experienceObj = docData.Experience
@@ -309,7 +309,7 @@ function Profile(props) {
                 className={classes.field}
                 label="School/University"
                 value={edu.School}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].School = e.target.value
@@ -324,7 +324,7 @@ function Profile(props) {
                 className={classes.field}
                 label="Degree"
                 value={edu.Degree}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].Degree = e.target.value
@@ -341,7 +341,7 @@ function Profile(props) {
                 className={classes.field}
                 label="Field Of Study"
                 value={edu.Fieldofstudy}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].Fieldofstudy = e.target.value
@@ -358,7 +358,7 @@ function Profile(props) {
                 className={classes.field}
                 label="Start Date"
                 value={edu.StartDate}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].StartDate = e.target.value
@@ -373,7 +373,7 @@ function Profile(props) {
                 className={classes.field}
                 label="End Date"
                 value={edu.EndDate}
-                variant="filled"
+                variant="outlined"
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].EndDate = e.target.value
@@ -392,7 +392,7 @@ function Profile(props) {
               label="Description"
               placeholder="Placeholder"
               multiline
-              variant="filled"
+              variant="outlined"
               value={edu.Description}
               onChange={(e) => {
                 let educationObj = docData.Education
@@ -450,7 +450,7 @@ function Profile(props) {
               fullWidth
               className={classes.field}
               label="Achievement"
-              variant="filled"
+              variant="outlined"
               value={achievement}
               onChange={(e) => {
                 let achievementArr = docData.Achievements
@@ -583,7 +583,7 @@ function Profile(props) {
             <TextField
               className={classes.field}
               label="Skill"
-              variant="filled"
+              variant="outlined"
               value={skill}
               onChange={(e) => {
                 let skillArr = docData.Skills
@@ -630,7 +630,7 @@ function Profile(props) {
           fullWidth
           className={classes.field}
           label="LinkedIn"
-          variant="filled"
+          variant="outlined"
           value={docData.Links.LinkedIn}
           onChange={(e) => setDocData(
             {
@@ -645,7 +645,7 @@ function Profile(props) {
           fullWidth
           className={classes.field}
           label="Twitter"
-          variant="filled"
+          variant="outlined"
           value={docData.Links.Twitter}
           onChange={(e) => setDocData(
             {
@@ -660,7 +660,7 @@ function Profile(props) {
           fullWidth
           className={classes.field}
           label="GitHub"
-          variant="filled"
+          variant="outlined"
           value={docData.Links.Github}
           onChange={(e) => setDocData(
             {
@@ -675,7 +675,7 @@ function Profile(props) {
           fullWidth
           className={classes.field}
           label="Facebook"
-          variant="filled"
+          variant="outlined"
           value={docData.Links.Facebook}
           onChange={(e) => setDocData(
             {
@@ -690,7 +690,7 @@ function Profile(props) {
           fullWidth
           className={classes.field}
           label="Instagram"
-          variant="filled"
+          variant="outlined"
           value={docData.Links.Instagram}
           onChange={(e) => setDocData(
             {
