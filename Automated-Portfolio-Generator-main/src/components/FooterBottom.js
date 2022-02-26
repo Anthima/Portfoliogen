@@ -15,7 +15,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       Developed with ❤️ by {' '}
       <Link color="inherit" href="https://portfolio.abhisheksrivastava.me">
-        Abhishek Srivastava
+        Batch-2018
       </Link>
     </Typography>
   );
