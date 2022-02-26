@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  margin: 0px;
+  padding: 0%;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+h1.MuiTypography-root {
+  font-family: "Zen Dots", cursive;
+}
+p.MuiTypography-root {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h5,
+span,
+h3,
+button,
+p {
+  font-family: "Roboto", sans-serif !important;
+}
+
+@media (max-width: 670px) {
+  h2,
+  h5,
+  span,
+  h3,
+  button,
+  p {
+    font-size: smaller;
+  }
+  h5.MuiTypography-root {
+    font-size: 0.6rem;
+  }
+  h3.makeStyles-heading-17 {
+    font-size: 1.5rem;
+  }
+  img.makeStyles-logo-4 {
+    width: 70px;
+    height: auto;
+  }
+  p.email {
+    display: none;
+  }
+  span.makeStyles-para-18 {
+    font-size: small;
+  }
+}
