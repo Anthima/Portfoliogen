@@ -5,18 +5,21 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    padding: theme.spacing(2),
+    backgroundColor: '#dedede',
+    position: 'absolute',
+    left: '0',
+    bottom: '0',
+    height: '45px',
+    width: '100%',
+    overflow: 'hidden'
   },
 }));
 
-
+// THIS FUNCTION ISN'T CALLED
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      Developed with ❤️ by {' '}
-      <Link color="inherit" href="https://portfolio.abhisheksrivastava.me">
-        Batch-2018
-      </Link>
+        PortfolioGen
     </Typography>
   );
 }
@@ -25,10 +28,12 @@ function FooterBottom() {
   const classes = useStyles();
   return (
     <footer className={classes.footer}>
-      <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-        Your Portfolio reflects your brand!
-    </Typography>
-      <Copyright />
+      {/* <Typography variant="subtitle1" align="center" color="textSecondary" component="p"> */}
+        <p style={{textAlign: 'center', fontSize: '15px'}}>PortfolioGen - Group 14</p>
+      {/* </Typography> */}
+      {
+      /* </Copyright> */
+      }
     </footer>
   )
 }

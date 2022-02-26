@@ -92,19 +92,23 @@ export default function BaseTemp(props) {
             }
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
-                {!user ?
+                {
+                // lOGIN BEHIND BELOW CODE: IF USER IS ONLINE, SHOW BUTTON 1 ELSE SHOW BUTTON 2
+                !user ?
                   (
-                    <Grid item>
-                      <Button
-                        className={classes.btns}
-                        variant="contained"
-                        color="secondary"
-                        startIcon={<CallMissedOutgoingIcon />}
-                        href='#working'
-                      >
-                        Explore
-                      </Button>
-                    </Grid>
+                    <div></div>
+                    // BELOW CODE HAS BEEN COMMENTED TO REMOVE EXPLORE BUTTON, WE ARE SHOWING EMPTY DIV
+                    // <Grid item>
+                    //   <Button
+                    //     className={classes.btns}
+                    //     variant="contained"
+                    //     color="secondary"
+                    //     startIcon={<CallMissedOutgoingIcon />}
+                    //     href='#working'
+                    //   >
+                    //     Explore
+                    //   </Button>
+                    // </Grid>
 
                   ) :
                   (
