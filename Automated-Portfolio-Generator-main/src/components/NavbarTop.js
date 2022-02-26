@@ -46,7 +46,7 @@ function NavbarTop({ goBack, switchComp }) {
             fontSize="large"
             className={classes.icon} /> */}
             <div>
-              headportfoliogen
+              PortfolioGen
             </div>
 
           {switchComp}
