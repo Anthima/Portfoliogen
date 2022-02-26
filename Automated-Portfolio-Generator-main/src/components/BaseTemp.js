@@ -68,7 +68,7 @@ export default function BaseTemp(props) {
               color="#fff"
               className={classes.mainHeading}
             >
-              Automated Portfolio Generator
+              PortfolioGen
             </Typography>
             <br />
             <Typography

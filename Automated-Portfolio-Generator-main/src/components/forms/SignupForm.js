@@ -79,7 +79,8 @@ function SignupForm({
           }}
         />
 
-        <RadioGroup
+        { // THIS HAS BEEN COMMENTED TO REMOVE RECRUITER AND DEVELOPER OPTIONS
+        /* <RadioGroup
           row
           aria-label="position"
           name="position"
@@ -102,7 +103,8 @@ function SignupForm({
             control={<Radio color="primary" />}
             label="Developer"
           />
-        </RadioGroup>
+        </RadioGroup> */
+        }
 
         <Button
           type="submit"

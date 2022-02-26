@@ -23,12 +23,16 @@ function BottomLinks({
   const classes = useStyles();
   return (
     <div className={classes.icons}>
+    {
+      // THIS HAS BEEN COMEMENTED TO REMOVE GITHUB AND GOOGLE SIGN-IN FEATURE
+    /*       
       <Button type="button" onClick={signInGitHub}>
         <GitHubIcon className={classes.icon} />
       </Button>
       <Button type="button" onClick={signInGoogle}>
         <img src={GmailIcon} alt="Sample Google" className={classes.icon} />
-      </Button>
+      </Button> */
+    }
     </div>
   )
 }
