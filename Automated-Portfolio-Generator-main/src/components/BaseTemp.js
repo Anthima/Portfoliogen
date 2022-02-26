@@ -167,11 +167,13 @@ export default function BaseTemp(props) {
         </div>
       </main>
 
-      <Divider />
+      { // THIS CODE HAS BEEN COMMENTED TO REMOVE WORKING SECTION AND FEATURE SECTION
+      /* <Divider />
       <WorkingSection />
       <Divider />
       <FeatureSection />
-      <Divider />
+      <Divider /> */
+      }
 
       <FooterBottom />
     </React.Fragment>
