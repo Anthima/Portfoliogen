@@ -176,10 +176,12 @@ export default function BaseTemp(props) {
       <WorkingSection />
       <Divider />
       <FeatureSection />
-      <Divider /> */
+      <Divider />
+      
+      <FooterBottom />
+      */
       }
 
-      <FooterBottom />
     </React.Fragment>
   );
 }

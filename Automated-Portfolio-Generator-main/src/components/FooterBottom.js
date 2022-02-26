@@ -5,13 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: '#dedede',
-    position: 'absolute',
-    left: '0',
-    bottom: '0',
-    height: '45px',
-    width: '100%',
-    overflow: 'hidden'
+    padding: theme.spacing(3)
   },
 }));
 
@@ -28,12 +22,10 @@ function FooterBottom() {
   const classes = useStyles();
   return (
     <footer className={classes.footer}>
-      {/* <Typography variant="subtitle1" align="center" color="textSecondary" component="p"> */}
-        <p style={{textAlign: 'center', fontSize: '15px'}}>PortfolioGen - Group 14</p>
-      {/* </Typography> */}
-      {
-      /* </Copyright> */
-      }
+      <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+        PortfolioGen
+      </Typography>
+      <Copyright />
     </footer>
   )
 }
