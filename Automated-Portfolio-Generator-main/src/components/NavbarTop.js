@@ -40,9 +40,14 @@ function NavbarTop({ goBack, switchComp }) {
       <CssBaseline />
       <AppBar color="secondary" position="relative">
         <Toolbar className={classes.navBox}>
-          <DeveloperModeIcon
+          
+         { // logo  change  krna hai 
+         /* <DeveloperModeIcon     
             fontSize="large"
-            className={classes.icon} />
+            className={classes.icon} /> */}
+            <div>
+              headportfoliogen
+            </div>
 
           {switchComp}
           <Typography variant="h6" color="inherit">
