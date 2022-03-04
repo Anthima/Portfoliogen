@@ -160,10 +160,9 @@ export default function LoginModal() {
   return (// Button color change
     <div>
       
-      <Button variant="contained"  style={{ background: '#5CDB94'}}  onClick={() => { console.log('onClick'); }}>
-     
-  Login / Sign Up
-</Button>
+      <Button variant="contained"  style={{ background: '#5CDB94'}}  onClick={handleOpen}>
+        Login / Sign Up
+      </Button>
       {/* <Typography
         type="button"
         onClick={handleOpen}
