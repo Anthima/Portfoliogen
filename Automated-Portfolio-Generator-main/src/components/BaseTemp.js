@@ -127,7 +127,7 @@ export default function BaseTemp(props) {
 
                 }
 
-                <Grid item>
+                {/* <Grid item>
                   {!user &&
                     <Button
                       className={classes.btns}
@@ -137,7 +137,7 @@ export default function BaseTemp(props) {
                       <LoginModal />
                     </Button>
                   }
-                </Grid>
+                </Grid> */}
               </Grid>
               {user && <Grid container spacing={2} justify="center">
                 <Grid>

@@ -8,6 +8,8 @@ import { auth, database, providerGoogle, providerGitHub } from '../firebase-conf
 import { UserContext } from '../context/userContext';
 import { FirebaseUserDefaultData } from './utils/defaultData';
 import MainForm from './forms/MainForm';
+import { Button } from '@material-ui/core';
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -155,14 +157,19 @@ export default function LoginModal() {
       showPassword: false,
     })
   }
-  return (
+  return (// Button color change
     <div>
-      <Typography
+      
+      <Button variant="contained"  style={{ background: '#5CDB94'}}  onClick={() => { console.log('onClick'); }}>
+     
+  Login / Sign Up
+</Button>
+      {/* <Typography
         type="button"
         onClick={handleOpen}
         variant="contained">
-        Login
-      </Typography>
+        Login / Sign Up
+      </Typography> */}
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

@@ -38,7 +38,7 @@ function NavbarTop({ goBack, switchComp }) {
   return (
     <>
       <CssBaseline />
-      <AppBar color="secondary" position="relative">
+      <AppBar style={{ background: '#F76D6D'}} position="relative">
         <Toolbar className={classes.navBox}>
           
          { // logo  change  krna hai 
@@ -49,7 +49,7 @@ function NavbarTop({ goBack, switchComp }) {
               PortfolioGen
             </div>
 
-          {switchComp}
+          {/* {switchComp} */}
           <Typography variant="h6" color="inherit">
             {goBack}
             {!user ?
