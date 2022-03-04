@@ -127,7 +127,8 @@ export default function BaseTemp(props) {
 
                 }
 
-                {/* <Grid item>
+                { // Button removed
+                /* <Grid item>
                   {!user &&
                     <Button
                       className={classes.btns}

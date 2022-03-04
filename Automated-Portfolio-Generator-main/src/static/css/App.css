@@ -5,13 +5,13 @@
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
 h1.MuiTypography-root {
-  font-family: "Zen Dots", cursive;
+  font-family: "Fredoka One", cursive;
 }
 p.MuiTypography-root {
-  font-family: "Roboto", sans-serif;
+  font-family: "Hubballi", cursive;
 }
 
 h2,
