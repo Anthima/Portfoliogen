@@ -45,9 +45,9 @@ function NavbarTop({ goBack, switchComp }) {
          /* <DeveloperModeIcon     
             fontSize="large"
             className={classes.icon} /> */}
-            <div>
+            <Typography variant="h7" color="inherit">
               PortfolioGen
-            </div>
+            </Typography>
 
           {/* {switchComp} */}
           <Typography variant="h6" color="inherit">

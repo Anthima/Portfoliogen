@@ -84,6 +84,7 @@ function Profile(props) {
       <Button
         size="large"
         variant="contained"
+        style={{ background: '#5CDB94'}}
         onClick={UpdateFireStore}>
         Save Data
       </Button>
@@ -176,7 +177,7 @@ function Profile(props) {
 
   const ExperienceSection = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Experience </h2>
         {docData.Experience.map((exp, index) =>
           <>
@@ -299,7 +300,7 @@ function Profile(props) {
 
   const EducationSection = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Education</h2>
         {docData.Education.map((edu, index) =>
           <>
@@ -441,7 +442,7 @@ function Profile(props) {
 
   const AchievementsLinks = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Achievements</h2>
         {docData.Achievements.map((achievement, index) =>
           <>
@@ -544,7 +545,7 @@ function Profile(props) {
 
   const Files = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Image and Resume</h2>
 
         <input type="file" onChange={imageChangeHandler} />
@@ -575,7 +576,7 @@ function Profile(props) {
 
   const SkillList = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Skills</h2>
         {docData.Skills.map((skill, index) =>
           <>
@@ -624,7 +625,7 @@ function Profile(props) {
 
   const SocialLinks = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Social Links</h2>
         <TextField
           fullWidth
@@ -741,7 +742,12 @@ function Profile(props) {
         {saveButton}
       </Grid>
 
-      <FooterBottom />
+      
+      {
+      /* THIS CODE HAS BEEN COMMENTED TO REMOVE THE FOOTER
+       <FooterBottom /> 
+      */
+      }
     </>
   )
 }

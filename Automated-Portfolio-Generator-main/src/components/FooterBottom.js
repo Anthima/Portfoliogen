@@ -21,12 +21,14 @@ function Copyright() {
 function FooterBottom() {
   const classes = useStyles();
   return (
+    
     <footer className={classes.footer}>
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         PortfolioGen
       </Typography>
       <Copyright />
     </footer>
+    
   )
 }
 
