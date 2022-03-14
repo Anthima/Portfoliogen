@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: '#f0f0f0'
   },
   icon: {
     height: 30,
@@ -85,6 +85,7 @@ function MainForm({
           value={tab}
           onChange={handleTabChange}
           aria-label="simple tabs example"
+          style={{backgroundColor: '#DEB887'}}
         >
           <Tab label="Log in" />
           <Tab label="Sign up" />

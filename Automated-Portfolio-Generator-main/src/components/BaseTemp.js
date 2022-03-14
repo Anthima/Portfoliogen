@@ -17,14 +17,13 @@ import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
-    // backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(14, 5, 10),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
   },
   btns: {
-    margin: 3,
+    margin: 3
   },
   mainHeading: {
     [theme.breakpoints.down('sm')]: {
@@ -116,8 +115,8 @@ export default function BaseTemp(props) {
                       <Button
                         className={classes.btns}
                         variant="contained"
-                        color="secondary"
                         startIcon={<CallMissedOutgoingIcon />}
+                        style={{backgroundColor: '#DEB887'}}
                         href={`/profile/${userId}`}
                       >
                         View Profile
@@ -145,9 +144,9 @@ export default function BaseTemp(props) {
                   <Button
                     className={classes.btns}
                     variant="contained"
-                    color="secondary"
                     target="_blank"
                     startIcon={<CalendarViewDayIcon />}
+                    style={{backgroundColor: '#DEB887'}}
                     href={`/${userId}/0`}
                   >
                     Portfolio: Design 1
@@ -158,9 +157,9 @@ export default function BaseTemp(props) {
                   <Button
                     className={classes.btns}
                     variant="contained"
-                    color="secondary"
                     target="_blank"
                     startIcon={<CalendarViewDayIcon />}
+                    style={{backgroundColor: '#DEB887'}}
                     href={`/${userId}/1`}
                   >
                     Portfolio: Design 2

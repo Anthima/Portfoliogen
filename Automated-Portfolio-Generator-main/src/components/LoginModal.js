@@ -16,11 +16,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    background: 'rgba(222, 184, 135, 0.4)'
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    backgroundColor: '#f0f0f0',
+    boxShadow: theme.shadows[10],
+    padding: theme.spacing(5, 1, 0),
+    border: '10px'
   },
 }));
 
