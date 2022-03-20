@@ -38,16 +38,22 @@ function NavbarTop({ goBack, switchComp }) {
   return (
     <>
       <CssBaseline />
-      <AppBar style={{ background: '#F76D6D'}} position="relative">
+      <AppBar style={{ background: '#DEB887'}} position="relative">
         <Toolbar className={classes.navBox}>
           
          { // logo  change  krna hai 
          /* <DeveloperModeIcon     
             fontSize="large"
             className={classes.icon} /> */}
+
             <div>
               <b>PortfolioGen</b>
             </div>
+
+            <Typography variant="h7" color="inherit">
+              PortfolioGen
+            </Typography>
+
 
           {/* {switchComp} */}
           <Typography variant="h6" color="inherit">
@@ -60,6 +66,7 @@ function NavbarTop({ goBack, switchComp }) {
                 <Button
                   onClick={signOut}
                   variant="contained"
+                  style={{backgroundColor: '#FFA07A'}}
                 >
                   Logout
                 </Button>

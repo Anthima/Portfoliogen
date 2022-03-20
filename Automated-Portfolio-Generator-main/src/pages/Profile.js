@@ -84,6 +84,7 @@ function Profile(props) {
       <Button
         size="large"
         variant="contained"
+        style={{ background: '#5CDB94'}}
         onClick={UpdateFireStore}>
         Save Data
       </Button>
@@ -112,6 +113,7 @@ function Profile(props) {
             label="First Name"
             variant="outlined"
             value={docData.FirstName}
+            style={{margin: '5px'}}
             onChange={(e) => setDocData({ ...docData, FirstName: e.target.value })}
           />
           <TextField 
@@ -119,6 +121,7 @@ function Profile(props) {
             label="Last Name"
             variant="outlined"
             value={docData.LastName}
+            style={{margin: '5px'}}
             onChange={(e) => setDocData({ ...docData, LastName: e.target.value })}
           />
         </div>
@@ -131,6 +134,7 @@ function Profile(props) {
             label="City"
             variant="outlined"
             value={docData.city}
+            style={{margin: '5px'}}
             onChange={(e) => setDocData({ ...docData, city: e.target.value })}
           />
           <TextField
@@ -138,6 +142,7 @@ function Profile(props) {
             label="Country"
             variant="outlined"
             value={docData.country}
+            style={{margin: '5px'}}
             onChange={(e) => setDocData({ ...docData, country: e.target.value })}
           />
         </div>
@@ -176,7 +181,7 @@ function Profile(props) {
 
   const ExperienceSection = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Experience </h2>
         {docData.Experience.map((exp, index) =>
           <>
@@ -187,6 +192,7 @@ function Profile(props) {
                 label="Company"
                 value={exp.Company}
                 variant="outlined"
+                style={{margin: '5px'}}
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].Company = e.target.value
@@ -202,6 +208,7 @@ function Profile(props) {
                 label="Title"
                 value={exp.Title}
                 variant="outlined"
+                style={{margin: '5px'}}
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].Title = e.target.value
@@ -219,6 +226,7 @@ function Profile(props) {
                 label="Start Date"
                 value={exp.StartDate}
                 variant="outlined"
+                style={{margin: '5px'}}
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].StartDate = e.target.value
@@ -234,6 +242,7 @@ function Profile(props) {
                 label="End Date"
                 value={exp.EndDate}
                 variant="outlined"
+                style={{margin: '5px'}}
                 onChange={(e) => {
                   let experienceObj = docData.Experience
                   experienceObj[index].EndDate = e.target.value
@@ -270,13 +279,13 @@ function Profile(props) {
         )}
         <div>
           <DeleteIcon
-            color="secondary"
+            // color="secondary"
             onClick={() => {
               var ExpArr = docData.Experience
               ExpArr.pop()
               setDocData({ ...docData, Experience: ExpArr })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#F08080'}}
           />
           <AddCircleIcon
             color="secondary"
@@ -290,7 +299,7 @@ function Profile(props) {
               }]
               setDocData({ ...docData, Experience: ExpObj })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#228B22' }}
           />
         </div>
       </Paper>
@@ -299,7 +308,7 @@ function Profile(props) {
 
   const EducationSection = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Education</h2>
         {docData.Education.map((edu, index) =>
           <>
@@ -310,6 +319,7 @@ function Profile(props) {
                 label="School/University"
                 value={edu.School}
                 variant="outlined"
+                style={{margin:'5px'}}
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].School = e.target.value
@@ -325,6 +335,7 @@ function Profile(props) {
                 label="Degree"
                 value={edu.Degree}
                 variant="outlined"
+                style={{margin:'5px'}}
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].Degree = e.target.value
@@ -339,26 +350,10 @@ function Profile(props) {
             <div>
               <TextField
                 className={classes.field}
-                label="Field Of Study"
-                value={edu.Fieldofstudy}
-                variant="outlined"
-                onChange={(e) => {
-                  let educationObj = docData.Education
-                  educationObj[index].Fieldofstudy = e.target.value
-                  setDocData(
-                    {
-                      ...docData, Education: educationObj
-                    }
-                  )
-                }}
-              />
-            </div>
-            <div>
-              <TextField
-                className={classes.field}
                 label="Start Date"
                 value={edu.StartDate}
                 variant="outlined"
+                style={{margin:'5px'}}
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].StartDate = e.target.value
@@ -374,6 +369,7 @@ function Profile(props) {
                 label="End Date"
                 value={edu.EndDate}
                 variant="outlined"
+                style={{margin:'5px'}}
                 onChange={(e) => {
                   let educationObj = docData.Education
                   educationObj[index].EndDate = e.target.value
@@ -385,6 +381,23 @@ function Profile(props) {
                 }}
               />
             </div>
+
+            <TextField
+              fullWidth
+              className={classes.field}
+              label="Field Of Study"
+              value={edu.Fieldofstudy}
+              variant="outlined"
+              onChange={(e) => {
+                let educationObj = docData.Education
+                educationObj[index].Fieldofstudy = e.target.value
+                setDocData(
+                  {
+                    ...docData, Education: educationObj
+                  }
+                )
+              }}
+            />
 
             <TextField
               fullWidth
@@ -417,7 +430,7 @@ function Profile(props) {
               EduArr.pop()
               setDocData({ ...docData, Education: EduArr })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#F08080' }}
           />
           <AddCircleIcon
             color="secondary"
@@ -432,7 +445,7 @@ function Profile(props) {
               }]
               setDocData({ ...docData, Education: EduObj })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#228B22'}}
           />
         </div>
       </Paper>
@@ -441,7 +454,7 @@ function Profile(props) {
 
   const AchievementsLinks = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Achievements</h2>
         {docData.Achievements.map((achievement, index) =>
           <>
@@ -474,7 +487,7 @@ function Profile(props) {
               achieveArr.pop()
               setDocData({ ...docData, Achievements: achieveArr })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#F08080' }}
           />
           <AddCircleIcon
             color="secondary"
@@ -482,7 +495,7 @@ function Profile(props) {
               let achieveArr = [...docData.Achievements, '']
               setDocData({ ...docData, Achievements: achieveArr })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#228B22' }}
           />
         </div>
       </Paper>
@@ -544,7 +557,7 @@ function Profile(props) {
 
   const Files = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Image and Resume</h2>
 
         <input type="file" onChange={imageChangeHandler} />
@@ -575,7 +588,7 @@ function Profile(props) {
 
   const SkillList = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Skills</h2>
         {docData.Skills.map((skill, index) =>
           <>
@@ -607,7 +620,7 @@ function Profile(props) {
               skillArr.pop()
               setDocData({ ...docData, Skills: skillArr })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#F08080' }}
           />
           <AddCircleIcon
             color="secondary"
@@ -615,7 +628,7 @@ function Profile(props) {
               let skillArr = [...docData.Skills, '']
               setDocData({ ...docData, Skills: skillArr })
             }}
-            style={{ fontSize: 40, margin: '15px' }}
+            style={{ fontSize: 40, margin: '15px', color: '#228B22' }}
           />
         </div>
       </Paper>
@@ -624,7 +637,7 @@ function Profile(props) {
 
   const SocialLinks = (
     <Grid item md={6} xs={12}>
-      <Paper className={classes.box}>
+      <Paper className={classes.box} elevation={4}>
         <h2>Social Links</h2>
         <TextField
           fullWidth
@@ -741,7 +754,12 @@ function Profile(props) {
         {saveButton}
       </Grid>
 
-      <FooterBottom />
+      
+      {
+      /* THIS CODE HAS BEEN COMMENTED TO REMOVE THE FOOTER
+       <FooterBottom /> 
+      */
+      }
     </>
   )
 }

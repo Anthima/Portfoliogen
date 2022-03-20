@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 10
   },
   TextFieldMani: {
-    marginTop: '10px',
+    marginTop: '10px'
   },
   icons: {
     display: 'flex',
@@ -84,7 +84,8 @@ function LoginForm({
           variant="contained"
           color="primary"
           style={{
-            marginTop: '20px'
+            marginTop: '20px',
+            backgroundColor: '#DEB887'
           }}
           onClick={SignInUser}
         >
