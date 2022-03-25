@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: '88vh',
+    color: "white"
   },
   head: {
     marginBottom: '60px',
@@ -35,7 +36,7 @@ function Main({ first, last, tagline }) {
   return (
     <div className={classes.root}>
       <Container maxWidth="md">
-        <Typography
+        <Typography 
           variant="h3"
           component="h1"
           align="center"

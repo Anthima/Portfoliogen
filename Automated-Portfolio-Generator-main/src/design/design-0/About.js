@@ -49,7 +49,6 @@ function About({
           md={4}
           className={classes.imageDiv}
         >
-          <img height='200' src={image} alt="Abhishek" />
         </Grid>}
         <Grid item md={8} className={classes.mainGrid}>
           <Grid item md={8}>

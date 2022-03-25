@@ -109,7 +109,6 @@ export default function LoginModal() {
         var userLoggedIn = userCredential.user;
         console.log("Loggedin user", userLoggedIn)
         setUser(userLoggedIn.email)
-        alert('User Logged in')
       })
       .catch((error) => {
         var errorCode = error.code;
