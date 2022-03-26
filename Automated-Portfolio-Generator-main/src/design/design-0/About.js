@@ -49,9 +49,17 @@ function About({
           md={4}
           className={classes.imageDiv}
         >
+        <img
+            width={450}
+            height={480}
+            className={classes.img}
+            src={image}
+            alt="myself"
+          />
         </Grid>}
         <Grid item md={8} className={classes.mainGrid}>
           <Grid item md={8}>
+            
             <Typography variant="h4" className={classes.text}>
               About Me
             </Typography>

@@ -63,11 +63,7 @@ function Common({
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      <img
-        className={classes.img}
-        src={image}
-        alt="myself"
-      />
+      
       <div className={classes.name}>
         <Typography
           className={classes.typograph}

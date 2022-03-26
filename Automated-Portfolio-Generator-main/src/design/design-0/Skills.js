@@ -61,7 +61,7 @@ function Skills({ skill, achievements }) {
     <Paper className={classes.root}>
       <Container className={classes.contentGrid} id="achievement">
         <Button size="large" className={classes.headTitle} startIcon={<CodeIcon />}>
-          ACHIEVEMENTS
+          <b>ACHIEVEMENTS</b>
         </Button>
         <div>
           {AchievementComp}
@@ -70,7 +70,7 @@ function Skills({ skill, achievements }) {
 
       <Container className={classes.contentGrid} id="skill">
         <Button size="large" className={classes.headTitle} startIcon={<CodeIcon />}>
-          SKILLS
+        <b>SKILLS</b>
         </Button>
         <div className={classes.buttonDiv}>
           {SkillComp}

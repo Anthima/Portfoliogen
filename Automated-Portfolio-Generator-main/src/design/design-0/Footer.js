@@ -24,7 +24,14 @@ function Footer({ links }) {
   const classes = useStyles();
 
   return (
+
+    
+
+
     <Paper className={classes.root}  id="contact">
+
+      <h2>CONNECT WITH ME ON:</h2>
+
       {links.Github && <Button href={links.Github}>
         <GitHubIcon fontSize='large' className={classes.icon} />
       </Button>}
