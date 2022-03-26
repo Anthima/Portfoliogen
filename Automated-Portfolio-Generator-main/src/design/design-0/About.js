@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#000524',
+    backgroundColor: '#B8C5EC',
     minHeight: '100vh'
   },
   mainGrid: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    color: '#fff'
+    color: '#000'
   }
 }));
 

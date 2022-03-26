@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     // marginRight: '30px',
     letterSpacing: '2px',
-    color: '#888484',
+    color: 'white',
     [theme.breakpoints.down('sm')]: {
       fontSize: 'smaller',
     },
@@ -38,7 +38,7 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar
         position="sticky"
-        style={{ background: '#28293E', boxShadow: 'none' }}
+        style={{ background: 'mediumslateblue', boxShadow: 'none' }}
         primary
       >
         <Toolbar className={classes.items}>

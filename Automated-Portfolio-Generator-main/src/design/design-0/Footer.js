@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#00000026',
+    backgroundColor: '#F7F8F9',
     minHeight: '40vh',
     flexWrap: 'wrap',
   },
