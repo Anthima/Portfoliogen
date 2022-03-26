@@ -38,7 +38,7 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar
         position="sticky"
-        style={{ background: 'transparent', boxShadow: 'none' }}
+        style={{ background: '#28293E', boxShadow: 'none' }}
         primary
       >
         <Toolbar className={classes.items}>

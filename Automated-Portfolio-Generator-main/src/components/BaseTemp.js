@@ -15,6 +15,7 @@ import FooterBottom from './FooterBottom';
 import { auth } from '../firebase-config';
 import Divider from '@material-ui/core/Divider';
 
+
 const useStyles = makeStyles((theme) => ({
   heroContent: {
     padding: theme.spacing(14, 5, 10),
@@ -56,7 +57,7 @@ export default function BaseTemp(props) {
     <React.Fragment>
 
       <NavbarTop switchComp={props.switchComp} />
-
+    
       <main class="videoContainer">
         <div className={classes.heroContent}>
           <Container>
