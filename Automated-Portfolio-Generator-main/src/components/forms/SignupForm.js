@@ -112,7 +112,7 @@ function SignupForm({
           color="primary"
           style={{
             marginTop: '20px',
-            backgroundColor: '#DEB887'
+            backgroundColor: 'mediumslateblue'
           }}
           onClick={CreateUser}
         >

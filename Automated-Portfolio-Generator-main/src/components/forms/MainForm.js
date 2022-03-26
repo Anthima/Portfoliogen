@@ -85,7 +85,7 @@ function MainForm({
           value={tab}
           onChange={handleTabChange}
           aria-label="simple tabs example"
-          style={{backgroundColor: '#DEB887'}}
+          style={{backgroundColor: 'mediumslateblue'}}
         >
           <Tab label="Log in" />
           <Tab label="Sign up" />
