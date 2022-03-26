@@ -203,7 +203,7 @@ export default function LoginModal() {
               (
                 <>
                   <Typography varient="h5" u>
-                    Welcome, {user}
+                    Welcome
                   </Typography>
                 </>
               )

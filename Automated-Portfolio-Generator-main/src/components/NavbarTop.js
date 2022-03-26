@@ -30,7 +30,7 @@ function NavbarTop({ goBack, switchComp }) {
       .signOut()
       .then(() => {
         setUser(null)
-        alert("User Logged Out")
+        // alert("User Logged Out")
       })
       .catch((error) => alert(error.message))
   }
@@ -64,6 +64,7 @@ function NavbarTop({ goBack, switchComp }) {
                   onClick={signOut}
                   variant="contained"
                   style={{backgroundColor: '#FFA07A'}}
+                  href={`/`}
                 >
                   Logout
                 </Button>
