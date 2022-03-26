@@ -12,11 +12,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#F7F8F9',
-    minHeight: '40vh',
+    minHeight: '20vh',
     flexWrap: 'wrap',
   },
   icon: {
-    color: '#4e4e4e'
+    color: '#0035C9'
   }
 }));
 

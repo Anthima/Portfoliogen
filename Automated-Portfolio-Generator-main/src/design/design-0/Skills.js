@@ -4,8 +4,8 @@ import CodeIcon from '@material-ui/icons/Code';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: '#000524',
-    minHeight: '80vh',
+    backgroundColor: '#B8C5EC',
+    minHeight: '60vh',
     // justifyContent: 'center',
     alignItems: 'center',
   },
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   headTitle: {
     margin: '30px',
     letterSpacing: '2px',
-    color: '#fff',
+    color: '#000',
     buttonBoxDecoration: 'underline #0000524',
   },
   btnText: {
@@ -49,7 +49,7 @@ function Skills({ skill, achievements }) {
 
   const AchievementComp = achievements.map((line, idx) =>
     <div style={{ marginLeft: '40px' }}>
-      <Typography variant="p" style={{ color: '#bbbbbb', marginTop: '15px' }}>
+      <Typography variant="p" style={{ color: '#000000', marginTop: '15px' }}>
         {idx + 1} {' - '} {line}
       </Typography>
       <br />

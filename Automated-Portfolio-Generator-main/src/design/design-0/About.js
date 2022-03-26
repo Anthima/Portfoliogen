@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#B8C5EC',
-    minHeight: '100vh'
+    minHeight: '80vh'
   },
   mainGrid: {
     justifyContent: 'center',
