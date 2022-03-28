@@ -64,6 +64,13 @@ function Common({
   return (
     <div className={classes.main}>
       
+      <img
+            width={500}
+            height={450}
+            className={classes.img}
+            src={image}
+            alt="myself"
+      />
       <div className={classes.name}>
         <Typography
           className={classes.typograph}

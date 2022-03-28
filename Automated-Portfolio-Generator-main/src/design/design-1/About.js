@@ -46,6 +46,7 @@ function About({
   tagline,
   desc,
   education,
+  image,
   experience,
   skill,
   achievements
@@ -61,6 +62,9 @@ function About({
         >
           About Me
         </Typography>
+        
+
+        
         <Typography
           variant="p"
           class={classes.para}
