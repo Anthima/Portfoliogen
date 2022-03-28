@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "./Automated-Portfolio-Generator-main/build/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

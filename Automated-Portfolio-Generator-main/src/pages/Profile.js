@@ -182,14 +182,14 @@ function Profile(props) {
   const ExperienceSection = (
     <Grid item md={6} xs={12}>
       <Paper className={classes.box} elevation={4}>
-        <h2>Experience </h2>
+        <h2>Experience & Projects</h2>
         {docData.Experience.map((exp, index) =>
           <>
             {index + 1}
             <div>
               <TextField
                 className={classes.field}
-                label="Company"
+                label="Company/Project"
                 value={exp.Company}
                 variant="outlined"
                 style={{margin: '5px'}}
@@ -205,7 +205,7 @@ function Profile(props) {
               />
               <TextField
                 className={classes.field}
-                label="Title"
+                label="Title (Your Role)"
                 value={exp.Title}
                 variant="outlined"
                 style={{margin: '5px'}}

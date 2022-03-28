@@ -89,7 +89,7 @@ function EduExp({ education, experience }) {
         <Grid container>
           <Grid item md={4} className={classes.headGrid}>
             <Typography variant="h5" className={classes.headTitle}>
-              EXPERIENCE
+              EXPERIENCE <br/> & PROJECTS
           </Typography>
           </Grid>
           <Grid item md={6} className={classes.contentGrid}>
